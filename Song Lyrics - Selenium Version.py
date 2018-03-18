@@ -42,7 +42,7 @@ def check_element_exist(xpath):
 #Create variables for page elements
 with_album_artist = "//div[@class = 'panel'][3]//td/a"
 with_albums = "//div[@class = 'panel'][2]//td/a"
-without_albums = "//td//a"
+without_albums = "//tr[2]//td//a"
 
 #Depending on the page layout, click a certain link
 wait = WebDriverWait(driver, 8)
