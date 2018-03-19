@@ -72,4 +72,3 @@ print("\n Returned lyrics for " + title)
 file = open('Lyrics/' + title + '.txt', 'w', encoding = 'utf-8')
 file.write(str(lyrics))
 file.close()
-
