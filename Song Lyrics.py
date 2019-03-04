@@ -9,13 +9,13 @@ import requests, os
 from bs4 import BeautifulSoup
 
 
-#Creates file to store lyrics in if it does not already exist
-os.makedirs('Lyrics', exist_ok = True)
+def main():
 
-print("Note: This script performs similar to Google's 'I'm feeling lucky' button.")
-print("It only returns the top search result. Consider modifying your search terms if the incorrect song was returned.")
+    #Creates file to store lyrics in if it does not already exist
+    os.makedirs('Lyrics', exist_ok = True)
 
-def lyrics():
+    print("Note: This script performs similar to Google's 'I'm feeling lucky' button.")
+    print("It only returns the top search result. Consider modifying your search terms if the incorrect song was returned.")
 
 
     while True:
@@ -79,12 +79,8 @@ def lyrics():
                 file.close()
                 break
 
-        else:
-             break
+            else:
+                break
 
-lyrics() 
-
-
-
-
-
+if __name__ == "__main__":
+    main()
