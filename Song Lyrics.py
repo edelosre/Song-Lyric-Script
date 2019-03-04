@@ -67,7 +67,7 @@ def main():
                 #Grab title for item that the search query returned
                 soup2 = BeautifulSoup(response2.content, 'html.parser')
                 lyrics = str(soup2.find('div', attrs = {'class':None, 'id':None}).get_text())
-                title = str(soup2.find('title').getText())
+                title = str(soup2.find('title').getText()).split(' |')[0]
                 print(title)
                 print(lyrics)
                 print('Returned lyrics for ' + title)
